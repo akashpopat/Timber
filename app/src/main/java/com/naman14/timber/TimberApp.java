@@ -18,6 +18,7 @@ import android.app.Application;
 
 import com.afollestad.appthemeengine.ATE;
 import com.crashlytics.android.Crashlytics;
+import com.crashlytics.android.answers.Answers;
 import com.crashlytics.android.core.CrashlyticsCore;
 import com.naman14.timber.permissions.Nammu;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -45,6 +46,7 @@ public class TimberApp extends Application {
                 .core(new CrashlyticsCore.Builder().disabled(BuildConfig.DEBUG).build())
                 .build();
         Fabric.with(this, crashlyticsKit);
+        Fabric.with(this, new Answers());
 
         ImageLoaderConfiguration localImageLoaderConfiguration = new ImageLoaderConfiguration.Builder(this).build();
         ImageLoader.getInstance().init(localImageLoaderConfiguration);

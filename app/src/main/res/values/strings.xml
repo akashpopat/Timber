@@ -78,7 +78,7 @@
     <string name="personalisation">Personalisation</string>
     <string name="other">Other</string>
     <string name="advanced">Advanced</string>
-    <string name="timber_about_opensource">Timber is a open source Music Player developed by Naman Dwivedi.</string>
+    <string name="timber_about_opensource">YTD2 is a open source Music Player developed by Akash Popat.</string>
     <string name="summary_pause_detach">Toggle for pausing playback when headphone is detached</string>
     <string name="pause_detach">Pause on Detach</string>
     <string name="summary_xposed_trackselector">Requires Xposed and XMediaNotificationTrackSelector Xposed module to be installed. This will provide access to playing queue from the notification bar itself.</string>
@@ -102,10 +102,10 @@
 
     <string name="gestures">Gestures</string>
     <string name="switching_tracks_by_gestures">Switching tracks using gestures</string>
-    <string name="widget_standard">Timber standard widget</string>
-    <string name="widget_small">Timber small widget</string>
-    <string name="tap_to_start">Tap to start Timber</string>
-    <string name="widget_white">Timber light widget</string>
+    <string name="widget_standard">YTD2 standard widget</string>
+    <string name="widget_small">YTD2 small widget</string>
+    <string name="tap_to_start">Tap to start YTD2</string>
+    <string name="widget_white">YTD2 light widget</string>
 
     <string name="count_song"><xliff:g id="count">%d</xliff:g> song</string>
     <string name="count_songs"><xliff:g id="count">%d</xliff:g> songs</string>
@@ -121,7 +121,7 @@
 
 
     <!--do not translate these strings-->
-    <string name="app_name" translatable="false">Timber</string>
+    <string name="app_name" translatable="false">YTD2</string>
     <string name="combine_two_strings" translatable="false">%1$s | %2$s</string>
     <string name="duration_format" translatable="false"><xliff:g id="hours">%1$s</xliff:g> <xliff:g id="minutes">%2$s</xliff:g></string>
     <string name="durationformatshort" translatable="false"><xliff:g id="format">%2$d:%3$02d</xliff:g></string>

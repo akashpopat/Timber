@@ -57,11 +57,10 @@ public class Helpers {
 
     public static class AboutDialog extends DialogFragment {
 
-        String urlgooglelus = "https://plus.google.com/u/0/+NamanDwivedi14";
-        String urlcommunity = "https://plus.google.com/communities/111029425713454201429";
-        String urltwitter = "https://twitter.com/naman1405";
-        String urlgithub = "https://github.com/naman14";
-        String urlsource = "https://github.com/naman14/Timber/issues";
+        String urlgooglelus = "https://plus.google.com/u/0/+AkashPopat";
+        String urltwitter = "https://twitter.com/akashpopat";
+        String urlgithub = "https://github.com/akashpopat";
+        String urlsource = "https://github.com/akashpopat/YTD2-Player/issues";
 
         public AboutDialog() {
         }
@@ -79,7 +78,6 @@ public class Helpers {
             TextView twitter = (TextView) aboutBodyView.findViewById(R.id.twitter);
             TextView github = (TextView) aboutBodyView.findViewById(R.id.github);
             TextView source = (TextView) aboutBodyView.findViewById(R.id.source);
-            TextView community = (TextView) aboutBodyView.findViewById(R.id.feature_request);
 
             TextView dismiss = (TextView) aboutBodyView.findViewById(R.id.dismiss_dialog);
             dismiss.setOnClickListener(new View.OnClickListener() {
@@ -127,19 +125,12 @@ public class Helpers {
                     startActivity(i);
                 }
             });
-            community.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent i = new Intent(Intent.ACTION_VIEW);
-                    i.setData(Uri.parse(urlcommunity));
-                    startActivity(i);
-                }
-            });
+
             try {
                 PackageInfo pInfo = getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0);
                 String version = pInfo.versionName;
                 int versionCode = pInfo.versionCode;
-                appversion.setText("Timber " + version);
+                appversion.setText("YTD2 " + version);
             } catch (PackageManager.NameNotFoundException e) {
                 e.printStackTrace();
             }
